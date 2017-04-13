@@ -1,0 +1,15 @@
+{
+    "name": "sendotp/sendotp",
+    "authors": [
+        {
+            "name": "Rahul Chordiya",
+            "email": "rahul@walkover.in"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "sendotp\\": "src/"
+        }
+    },
+    "require": {}
+}
