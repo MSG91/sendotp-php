@@ -25,7 +25,7 @@ Then, require composer autoload and use package in your code:
 
 Once required, the last step is to initialize the SDK with your project name and project API Key:
 
-    $sokt = new sendotp('AUTK-KEY','Message Template : My otp is {{otp}}. Please do not share Me.');
+    $otp = new sendotp('AUTK-KEY','Message Template : My otp is {{otp}}. Please do not share Me.');
 
 That's all, your SDK is set up! You can now use any block by copying the code snippet from the marketplace.
 
