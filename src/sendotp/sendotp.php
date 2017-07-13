@@ -48,6 +48,7 @@ class sendotp
         $requestArgs["sender"]=$senderId;
         $requestArgs["message"]=str_replace('{{otp}}', $otp, $this->messageTemplate);
         $requestArgs["otp"]=$otp;
+        $this->message=$requestArgs["message"];
         $response  = $this->call("sendotp.php", $requestArgs);
         if($response["type"]=="success"){
           $response["otp"]=$requestArgs["otp"];
