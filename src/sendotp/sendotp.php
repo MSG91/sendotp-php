@@ -132,7 +132,7 @@ class sendotp
 
         $httpInstance = new HttpInstance(static::actionUrlBuild($action));
 
-        $httpInstance->setParameters($this->message, $this->key, $args);
+        $httpInstance->setParameters($args);
 
         try {
 
