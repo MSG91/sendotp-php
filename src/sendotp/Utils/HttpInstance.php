@@ -40,7 +40,7 @@ class HttpInstance
      * @param $key
      * @param $args
      */
-    public function setParameters($project, $key, $args)
+    public function setParameters($args)
     {
         if(is_array($args)){
       		$post_data = $args;
