@@ -50,12 +50,13 @@ class sendotp
         $requestArgs["otp"]=$otp;
         $this->message=$requestArgs["message"];
         $response  = $this->call("sendotp.php", $requestArgs);
-        if($response["type"]=="success"){
-          $response["otp"]=$requestArgs["otp"];
-        }
-        else{
-          $response["otp"]="";
-        }
+        if (array_key_exists("type",$response)){
+            if($response["type"]=="success"){
+              $response["otp"]=$requestArgs["otp"];
+            }
+        }else{
+              $response["otp"]="";
+            }
         return $response;
     }
 
